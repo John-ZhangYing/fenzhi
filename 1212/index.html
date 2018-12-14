@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<title>Please Login</title>
+<style>
+	#back{
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	.code {
+		font-family: Arial;
+		font-style: italic;
+		font-weight: bold;
+		border: 0;
+		letter-spacing: 3px;
+		color: blue;
+	}
+</style>
+<script type="text/javascript" src="js/checkCode.js">
+		</script>
+</head>
+<body topmargin="50" marginheight="50" background="img/c2.jpg" id="back">
+<form method="post">
+
+<div align="center">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tr> <td>&nbsp;</td></tr>
+
+<tr align="center">
+        <td  colspan="2"><img src="img/logo1.png" width="741" height="86"></td>
+</tr>
+
+<tr align="center"> <td colspan="2"><font size="10" color="#336699">Please Login</font></td></tr>
+
+<tr align="center">
+
+<td colspan="2"> User Name &nbsp;&nbsp;&nbsp;<input type="TEXT" name="username" SIZE="25" MAXLENGTH="63" VALUE="">
+</td>
+</tr>
+<tr align="center" >
+<td colspan="2"> Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Password" name="password" SIZE="25" MAXLENGTH="24">
+</td>
+</tr>
+<tr align="center">
+<td colspan="2"> Your Role &nbsp;&nbsp;&nbsp;管理员<input type="radio" name="role" value="">员工<input type="radio" name="role" value="" checked="checked">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</td>
+</tr>
+<tr align="center">
+<td colspan="2">Validation&nbsp;&nbsp;&nbsp;<input type="text" name="validation" size="7" id="input">
+<input type="button" id="checkCode" class="code" onclick="createCode()" />
+			<a href="#" onclick="createCode()">看不清楚</a>
+</td>
+</tr>
+<tr align="center">
+<td colspan="2"><input type="button" value="提交" onclick="validate()" />
+</td>
+</tr>
+</table>
+<br>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <div align="center"></div>
+          <div align="center">By pressing &quot;Submit&quot; button, you acknowledge 
+            that you have read and accept the terms of use given below.<br>
+            Please log a ticket with Capgemini Helpdesk for Username and Password.</div>
+        </td>
+      </tr>
+      <tr>
+        <td height="26">
+          <div align="center">_____________________________________________________________________________________________________ 
+          </div>
+        </td>
+      </tr>
+      
+    </table>
+  </div>
+
+</form>
+</body>
+</html>

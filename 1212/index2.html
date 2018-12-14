@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    body, img, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, div, input, textarea, span {
+        margin: 0;
+        padding: 0;
+        font-family: "微软雅黑", "Arial";
+    }
+
+    input{
+        outline: none;
+    }
+    ul, li {
+        list-style-type: none;
+    }
+
+    img {
+        border: medium none;
+    }
+    #content{
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1366px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+    #content > header{
+        padding: 20px;
+        background: #007fff;
+        color: #fff;
+    }
+    #content > section{
+        height: calc( 100% - 122px );
+    }
+    #content > section > nav{
+        width: 200px;
+        height: 100%;
+        padding: 10px;
+        vertical-align: top;
+        overflow-x: hidden;
+        transition: width 0.2s;
+        border-right: 1px solid #e2e2e2;
+    }
+    #content > section > nav li{
+        margin: 10px 0;
+    }
+    #content > section > nav dl{
+        display: none;
+    }
+    #content > section > div{
+        width: calc( 100% - 230px );
+        height: 100%;
+        vertical-align: top;
+    }
+    #content > footer{
+        display: block;
+        padding: 20px;
+        text-align: center;
+        background: #666;
+        color: #fff;
+    }
+	#back{
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+    .inlineblock{
+        display: inline-block;
+    }
+    
+</style>
+<body background="img/c2.jpg" id="back">
+<div id="content">
+    <header>capgemini凯捷</header>
+    <section>
+        <nav type="0" class="inlineblock allNav">
+           <form>
+           	<input type="button" value="Edit" style="width: 101px;height: 42px;" />
+           </form>
+		   <br>
+           <form>
+           	<input type="button" value="Upload" style="width: 101px;height: 42px;" />
+           </form>
+		   <br>
+           <form>
+           	<input type="button" value="Download" style="width: 101px;height: 42px;" />
+           </form>
+        </nav><div class="inlineblock">
+        <form action="index3.html" method="get" >
+	<table border="1" align="center" width="800" height="100">
+		<tr>
+			<td colspan="3" align="center" ><b>CURRICULUM VITAE</b></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="name" value="Maria" maxlength="5"  size="50"  /></td>
+		</tr>
+		<tr>
+			<td>Job Title:</td>
+			<td><input type="text" name="job"   /></td>
+		</tr>
+		<tr>
+			<td>sex:</td>
+			<td>female<input type="radio" name="sex" value="0"   />male<input type="radio" name="sex" value="1" checked="checked" /></td>
+		</tr>
+		<tr>
+			<td>Job Place:</td>
+			<td>ShangHai<input type="checkbox"  checked="checked"  />KunShan<input type="checkbox" />BeiJing<input type="checkbox"   /></td>
+		</tr>
+		<tr>
+			<td>Education:</td>
+			<td>
+				<select name="edu" size="10"  multiple="multiple" >
+					<option value="00" >---Choose---</option>
+					<option value="01" >High School</option>
+					<option value="02" selected="selected" >undergraduate</option>
+					<option value="04" >graduate</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Photo:</td>
+			<td><input type="file" name="photo" /></td>
+		</tr>
+		<tr>
+			<td>Desc:</td>
+			<td><textarea name="desc" cols="30" rows="10"   ></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" ><input type="submit" value="submit" /><input type="reset" value="reset"/></td>
+		</tr>
+		
+	</table>
+ </form>
+		
+		
+        <div>
+            <ul id="type2">
+
+            </ul>
+        </div>
+    </div>
+    </section>
+    <footer> @copyright 2018 版权归XXX所有</footer>
+</div>
+</body>
+
+</html>
